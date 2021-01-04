@@ -1,12 +1,17 @@
-// Game Over 2.0
+// Game Over 3.0
 // A first C++ programm demonstrates a using directive
 
 #include <iostream>
 
-using namespace std;
+// using the full std namespace
+// using namespace std;
+
+// vs. using specific commands of std::
+using std::cout;
+using std::endl;
 
 int main()
 {
-	cout << "Game Over!" << endl;
-	return 0;
+    cout << "Game Over!" << endl;
+    return 0;
 }
