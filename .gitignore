@@ -1,11 +1,8 @@
 # IDE & Debug folders
 **/.vs
 **/.vscode
-**/Debug
-
-# Files without extensions
-*
-!*.*
+**/debug
+**/out
 
 # Explicit custom rules
 *.dSYM
