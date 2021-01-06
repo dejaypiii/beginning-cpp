@@ -7,3 +7,4 @@
 # Explicit custom rules
 *.dSYM
 .DS_Store
+*.exe
