@@ -26,7 +26,7 @@ int main()
             cout << "\nHey master!";
             success = true;
         }
-        else if (username == "guest" && password == "guest")
+        else if (username == "guest" || password == "guest")
         {
             cout << "\nWelcome, guest.";
             success = true;
