@@ -1,0 +1,17 @@
+# Exercise 1
+Task: Rewrite the Menu Chooser program from this chapter using an enumeration to represent difficulty levels. The variable choice will still be of type int.
+
+Exercise is already implemented in the example "2-Menu Chooser".
+
+
+# Exercise 2
+Task: What's wrong with the following loop?
+
+int x = 0;
+
+while (x) {
+    ++x;
+    cout << x << endl;
+}
+
+Answer: The loop will never execute anything because x = 0 which is equals to false.
