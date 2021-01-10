@@ -13,7 +13,7 @@ int main()
     string word2("Over");
     string word3(3, '!');
 
-    string phrase = word1 + " " + word2 + " " + word3;
+    string phrase = word1 + " " + word2 + word3;
     cout << "The phrase is: " << phrase << "\n\n";
 
     cout << "The phrase has " << phrase.size() << " characters in it.\n\n";
