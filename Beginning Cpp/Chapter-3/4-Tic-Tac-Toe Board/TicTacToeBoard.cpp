@@ -35,4 +35,6 @@ int main()
 
     cout << "Now the tic-tac-toe board is:\n";
     outputTicTacToeBoard(board);
+
+    return 0;
 }
