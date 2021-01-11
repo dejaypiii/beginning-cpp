@@ -1,0 +1,6 @@
+Task:
+- What's wrong with the following code?
+
+Answer:
+- The definition of the char array mixed up the rows and cols
+- therefore the array initialization is invalid
