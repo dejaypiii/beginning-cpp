@@ -38,6 +38,8 @@ int main()
 
     string jumble = theWord; // jumbled version of word
     int length = jumble.size();
+    int score = length * 10;
+
     for (int i = 0; i < length; ++i)
     {
         int index1 = rand() % length;
@@ -59,19 +61,30 @@ int main()
     {
         if (guess == "hint")
         {
+            score /= 2;
             cout << theHint;
         }
         else
         {
+            if (score > 10)
+            {
+                score -= 10;
+            }
+            else
+            {
+                score = 0;
+            }
             cout << "Sorry, that is not it.";
         }
 
+        cout << "\n\nCurrent score: " << score << endl;
         guess = getGuess();
     }
 
     if (guess == theWord)
     {
         cout << "\nThat's it! You guessed it!\n";
+        cout << "\nYour final score is: " << score << endl;
     }
 
     cout << "\nThanks for playing.\n";
