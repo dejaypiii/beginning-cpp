@@ -1,0 +1,13 @@
+Task:
+-What's wrong with the following code?
+
+       for (int i = 0; i <= phrase.size(); ++i)
+{
+    cout << "Character at position " << i << " is: " << phrase[i] << endl;
+}
+
+Answer:
+- the for loops checks <= instead of <
+- therefore it is an off by one error
+- the array has valid index for 0 to 14
+- the last loop iteration will access array index 15 which is undetermined
