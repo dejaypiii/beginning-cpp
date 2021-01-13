@@ -2,10 +2,11 @@
 // Task:
 // Write pseudo code for chapter 3 example Word Jumble.
 
-// define a list of word with correlating hints
+// define a list of words with correlating hints
 // choose a random word of the list
 // shuffle the letters of the word
 // as long as the input is not 'quit' and not the correct word
     // get player input
     // in case of hint output the hint
-    // if the input is the correct word output congrats
+
+// if the input is the correct word output congrats
