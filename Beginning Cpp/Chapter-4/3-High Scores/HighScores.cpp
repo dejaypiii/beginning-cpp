@@ -13,7 +13,6 @@ int main()
 {
     vector<int>::const_iterator iter;
 
-    srand(static_cast<unsigned int>(time(0)));
     random_device rd;
     mt19937 g(rd()); // seeding is broken with mingw on windows.
                      // Microsoft compiler cl results in correct random results
@@ -51,7 +50,7 @@ int main()
     }
 
     cout << "\nRandomizing scores...";
-    shuffle(scores.begin(), scores.end(), g);
+    shuffle(scores.begin(), scores.end(), g); // random_shuffle doesn't exist anymore in the current c++ version
     cout << "\nHigh Score:\n";
     for (iter = scores.begin(); iter != scores.end(); ++iter)
     {
