@@ -1,0 +1,6 @@
+Task:
+What's wrong with the following prototype?
+
+int askNumber(int low = 1, int high);
+
+Answer: All params after the first param with a default value also must have a default value;
