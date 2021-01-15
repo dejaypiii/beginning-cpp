@@ -54,5 +54,5 @@ int main()
 
 string &refToElement(vector<string> &vec, int index)
 {
-    return vec[index];
+    return vec[index]; // attention: never return a reference to an object that cease to exist after returning (e.g. a local variable of the function)
 }
