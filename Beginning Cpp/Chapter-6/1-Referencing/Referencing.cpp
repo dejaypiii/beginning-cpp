@@ -9,7 +9,6 @@ int main()
 {
     int myScore = 1000;
     int &mikesScore = myScore; // create a reference
-    int &peterScore;
 
     cout << "myScore is: " << myScore << "\n";
     cout << "mikesScore is: " << mikesScore << "\n\n";
